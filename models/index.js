@@ -5,11 +5,11 @@ const { MONGO_URI } = process.env;
 const configOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-}
+};
 
 mongoose
     .connect(MONGO_URI, configOptions)
-    .then(() => console.log("MongoDB successfully conntect..."))
+    .then(() => console.log("MongoDB successfully connected..."))
     .catch((err) => console.log("MongoDB connection error:", err));
 
 const db = mongoose.connection;
