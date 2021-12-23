@@ -2,7 +2,7 @@
 // season schema
 const mongoose = require("mongoose");
 
-const seasonSchema = new mongoose.SchemaType({
+const seasonSchema = new mongoose.Schema({
     url: String,
     title: { type: String, required: true },
     imague_url: String,
